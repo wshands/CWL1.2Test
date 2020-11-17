@@ -4,6 +4,7 @@ cwlVersion: v1.2
 class: Workflow
 
 #label: {"$include":"metadata.txt"}
+label: "foo"
 
 inputs: []
 
