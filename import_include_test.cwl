@@ -10,21 +10,12 @@ inputs: []
 outputs:
   classout:
     type: File
-    #outputSource: compile/compiled_class
     outputSource: create-tar/tar_compressed_java_file
 
 requirements:
   SubworkflowFeatureRequirement: {}
 
 steps:
-#  compile:
-#    run: 1st-workflow.cwl
-#    in:
-#      tarball: create-tar/tar_compressed_java_file
-#      name_of_file_to_extract:
-#        default: "Hello.java"
-#    out: [compiled_class]
-
   create-tar:
     in: []
     out: [tar_compressed_java_file]
