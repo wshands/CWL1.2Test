@@ -20,9 +20,7 @@ steps:
     in: []
     out: [tar_compressed_java_file]
     run:
-      tar_tool.cwl
-
-      #{ "$import": "tar_tool_inline.cwl" }
+      { "$import": "tar_tool.cwl" }
 
       #      class: CommandLineTool
       #      requirements:
